@@ -115,10 +115,10 @@ function App() {
     <div className="root" id="container">
       {!isEmbedded && (
         <>
-          <h1>easy-VQA Demo</h1>
+          <h1>Virtual Question Answering Results Demonstration</h1>
           <h2>
-            A Javascript demo of a{" "}
-            <a href="https://victorzhou.com/blog/easy-vqa/">
+            APL405 Term project results{" "}
+            {/* <a href="https://victorzhou.com/blog/easy-vqa/">
               Visual Question Answering (VQA)
             </a>{" "}
             model trained on the{" "}
@@ -129,11 +129,11 @@ function App() {
             >
               easy-VQA dataset
             </a>
-            .
+            . */}
           </h2>
           <p className="description">
             <b>
-              Read the{" "}
+              {/* Read the{" "}
               <a href="https://victorzhou.com/blog/easy-vqa/">blog post</a>
             </b>{" "}
             or see the source code on{" "}
@@ -144,7 +144,10 @@ function App() {
             >
               Github
             </a>
-            .
+            . */}
+              Check the predictions for the questions corresponding to the
+              images.
+            </b>
           </p>
         </>
       )}
@@ -177,7 +180,7 @@ function App() {
                   >
                     {" "}
                     <div className="btText d-flex justify-content-center">
-                      Random Question
+                      Change Question
                     </div>
                   </Button>
                 </div>
@@ -219,7 +222,7 @@ function App() {
                     className="bt"
                   >
                     <div className="btText d-flex justify-content-center">
-                      Random Image
+                      Change Image
                     </div>
                   </Button>
                 </div>
