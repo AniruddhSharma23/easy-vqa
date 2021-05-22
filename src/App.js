@@ -151,6 +151,40 @@ function App() {
       <div className="container">
         <Row className="row1">
           <Col xs={12} md={6} lg={6} className=" d-flex justify-content-center">
+            <Card className="cards align-middle">
+              <Card.Header className="cardsHeader">The Question</Card.Header>
+              <Card.Body className=" cardsBody">
+                <Form className="cardForm">
+                  <Form.Group controlId="formQuestion">
+                    <Form.Control
+                      className="cardForm"
+                      as="textarea"
+                      placeholder={SAMPLE_QUESTIONS[0]}
+                      value={question}
+                      onChange={onQuestionChange}
+                      disabled={predicting}
+                    />
+                  </Form.Group>
+                </Form>
+                <Card.Text className="cardsText d-flex justify-content-center">
+                  Want a different question?
+                </Card.Text>
+                <div className="d-flex justify-content-center">
+                  <Button
+                    onClick={randomizeQuestion}
+                    disabled={predicting}
+                    className="bt"
+                  >
+                    {" "}
+                    <div className="btText d-flex justify-content-center">
+                      Random Question
+                    </div>
+                  </Button>
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs={12} md={6} lg={6} className=" d-flex justify-content-center">
             <Card className="cards">
               <Card.Header className="cardsHeader">
                 <span className="ch">The Image</span>
@@ -186,40 +220,6 @@ function App() {
                   >
                     <div className="btText d-flex justify-content-center">
                       Random Image
-                    </div>
-                  </Button>
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col xs={12} md={6} lg={6} className=" d-flex justify-content-center">
-            <Card className="cards align-middle">
-              <Card.Header className="cardsHeader">The Question</Card.Header>
-              <Card.Body className=" cardsBody">
-                <Form className="cardForm">
-                  <Form.Group controlId="formQuestion">
-                    <Form.Control
-                      className="cardForm"
-                      as="textarea"
-                      placeholder={SAMPLE_QUESTIONS[0]}
-                      value={question}
-                      onChange={onQuestionChange}
-                      disabled={predicting}
-                    />
-                  </Form.Group>
-                </Form>
-                <Card.Text className="cardsText d-flex justify-content-center">
-                  Want a different question?
-                </Card.Text>
-                <div className="d-flex justify-content-center">
-                  <Button
-                    onClick={randomizeQuestion}
-                    disabled={predicting}
-                    className="bt"
-                  >
-                    {" "}
-                    <div className="btText d-flex justify-content-center">
-                      Random Question
                     </div>
                   </Button>
                 </div>
