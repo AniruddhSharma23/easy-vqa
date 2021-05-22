@@ -113,13 +113,12 @@ function App() {
 
   return (
     <div className="root" id="container">
-      <div>
-        {!isEmbedded && (
-          <>
-            <h1>Virtual Question Answering Results Demonstration</h1>
-            <h2>
-              APL405 Term project results{" "}
-              {/* <a href="https://victorzhou.com/blog/easy-vqa/">
+      {!isEmbedded && (
+        <>
+          <h1>Virtual Question Answering Results Demonstration</h1>
+          <h2>
+            APL405 Term Project{" "}
+            {/* <a href="https://victorzhou.com/blog/easy-vqa/">
               Visual Question Answering (VQA)
             </a>{" "}
             model trained on the{" "}
@@ -131,10 +130,10 @@ function App() {
               easy-VQA dataset
             </a>
             . */}
-            </h2>
-            <p className="description">
-              <b>
-                {/* Read the{" "}
+          </h2>
+          <p className="description">
+            <b>
+              {/* Read the{" "}
               <a href="https://victorzhou.com/blog/easy-vqa/">blog post</a>
             </b>{" "}
             or see the source code on{" "}
@@ -146,13 +145,12 @@ function App() {
               Github
             </a>
             . */}
-                Check the predictions for the questions corresponding to the
-                images.
-              </b>
-            </p>
-          </>
-        )}
-      </div>
+              Check the predictions for the questions corresponding to the
+              images.
+            </b>
+          </p>
+        </>
+      )}
       <div className="container">
         <Row className="row1">
           <Col xs={12} md={6} lg={6} className=" d-flex justify-content-center">
