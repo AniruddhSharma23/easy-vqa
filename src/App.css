@@ -1,0 +1,175 @@
+body {
+  font-family: "Alatsi", sans-serif;
+  margin: 0;
+  overflow: hidden;
+  background: black;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+canvas {
+  width: 100%;
+}
+
+h1,
+h2,
+p.description {
+  text-align: center;
+  color: aqua;
+}
+h1 {
+  font-weight: 700;
+  margin-bottom: 3px;
+  margin-top: 7px;
+}
+h2 {
+  font-size: 20px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+p.description {
+  font-size: 19px;
+  margin-bottom: 18px;
+  margin-top: 4px;
+  font-weight: 700;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+  margin-top: 10px;
+}
+.row1 {
+  width: 100%;
+  overflow: hidden;
+}
+.cards {
+  border-radius: 5%;
+  border-style: solid;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: #045de9;
+  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+}
+.cardsBody {
+  margin-top: 10px;
+}
+.col1 {
+  text-align: center;
+}
+.cardsHeader {
+  background-color: rgb(29, 82, 182);
+  color: white;
+  font-weight: bold;
+  font-style: oblique;
+  font-size: larger;
+}
+.cardsText {
+  font-weight: 900;
+  color: rgb(82, 5, 5);
+
+  font-size: larger;
+}
+
+.card {
+  margin: 5px;
+  min-width: 300px;
+  width: 80%;
+
+  overflow: hidden;
+}
+.cardForm {
+  border-radius: 15px;
+}
+.card-text {
+  margin-bottom: 0.5rem;
+}
+
+.image-caption {
+  text-align: center;
+  font-size: 17px;
+  color: white;
+  font-weight: 600;
+  margin-top: 4px;
+}
+::placeholder:hover {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 1; /* Firefox */
+}
+.bt {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 10%;
+  background-color: rgb(34, 190, 34);
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.btText {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  font-stretch: extra-expanded;
+  width: 100%;
+  overflow: hidden;
+  padding: 3px;
+}
+.btText:hover {
+  color: black;
+}
+.bt:hover {
+  background-color: rgb(142, 202, 52);
+  color: black;
+}
+.bt1 {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 10%;
+  background-color: rgb(34, 190, 34);
+  font-weight: 900;
+  font-size: large;
+  font-stretch: extra-expanded;
+}
+.bt1:hover {
+  background-color: rgb(142, 202, 52);
+  color: black;
+}
+
+@media only screen and (max-width: 720px) {
+  .card {
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
