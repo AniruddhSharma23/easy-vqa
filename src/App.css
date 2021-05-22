@@ -1,29 +1,29 @@
-/* body {
-  overflow: hidden;
+body {
+  font-family: "Alatsi", sans-serif;
+  margin: 0;
+
   background: black;
-  width: 100vw;
-  height: 100vh;
 }
 
 #container {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
 }
-canvas {
-  height: auto;
-} */
 
-.root {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.title {
+  font-size: 10vw;
+  color: white;
+}
+
+canvas {
+  width: 100%;
 }
 
 .container {
@@ -71,7 +71,6 @@ p.description {
 }
 .row1 {
   width: 100%;
-  overflow: hidden;
 }
 .cards {
   border-radius: 5%;
@@ -107,8 +106,6 @@ p.description {
   margin: 5px;
   min-width: 300px;
   width: 80%;
-
-  overflow: hidden;
 }
 .cardForm {
   border-radius: 15px;
@@ -146,7 +143,7 @@ p.description {
   font-size: 18px;
   font-stretch: extra-expanded;
   width: 100%;
-  overflow: hidden;
+
   padding: 3px;
 }
 .btText:hover {
