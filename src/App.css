@@ -55,7 +55,6 @@ p.description {
   width: 100%;
 }
 .cards {
-  border-radius: 5%;
   border-style: solid;
 
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -70,17 +69,16 @@ p.description {
 .col1 {
   text-align: center;
 }
-.ch {
-  border-radius: 50%;
-}
+
 .cardsHeader {
-  background-color: rgb(29, 82, 182);
   color: white;
   font-weight: bold;
   font-style: oblique;
   font-size: larger;
   border-radius: 15%;
+  background-color: rgb(29, 82, 182);
 }
+
 .cardsText {
   font-weight: 900;
   color: rgb(82, 5, 5);

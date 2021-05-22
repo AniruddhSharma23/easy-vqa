@@ -152,9 +152,10 @@ function App() {
         <Row className="row1">
           <Col xs={12} md={6} lg={6} className=" d-flex justify-content-center">
             <Card className="cards">
-              <div className="ch">
-                <Card.Header className="cardsHeader">The Image</Card.Header>
-              </div>
+              <Card.Header className="cardsHeader">
+                <span className="ch">The Image</span>
+              </Card.Header>
+
               <Card.Body className="cardsBody">
                 <canvas
                   className="cardForm"
