@@ -12,7 +12,7 @@ body {
     rgba(0, 212, 255, 1) 100%
   );
 } */
-/* body {
+body {
   background: linear-gradient(-45deg, #06031f, #0d2b63, #7f1999, #4985df);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
@@ -28,34 +28,8 @@ body {
   100% {
     background-position: 0% 50%;
   }
-} */
-body {
-  font-family: "Alatsi", sans-serif;
-  margin: 0;
-
-  background: black;
 }
 
-#container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-}
-
-.title {
-  font-size: 10vw;
-  color: white;
-}
-
-canvas {
-  width: 100%;
-}
 h1,
 h2,
 p.description {
