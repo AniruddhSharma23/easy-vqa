@@ -1,1 +1,1 @@
-Live demo: https://apl405-termproject.netlify.app/
+Live demo: https://easyvqa-ani23.netlify.app/
